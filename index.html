@@ -7,11 +7,14 @@
     <meta name="description"
         content="Los mejores sabores de helado te esperan en Mar del Plata. Visitanos y combrobalo vos mismo.">
     <title>Helados Teresa | El mejor sabor</title>
+    <link rel="icon" href="/images/iso.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Mate:ital@0;1&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 
 <body>
@@ -66,7 +69,7 @@
             <div class="newflavors__circles">
                 <div class="newflavor__container">
                     <div class="circular-image newflavor1"></div>
-                    <p class="newflavors__circles-text">Crema Continental</p>
+                    <p class="newflavors__circles-text">Crema Patagonica</p>
                 </div>
                 <div class="newflavor__container">
                     <div class="circular-image newflavor2"></div>
@@ -123,15 +126,16 @@
             <p class="curiosities__description">Secretos del helado italiano</p>
             <div class="curiosities__video-wrapper">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/N_K6n5mwIGQ?si=mO1Dux2PmzqDFjHv"
-                    title="YouTube video player" frameborder="0"
+                    title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </article>
     </section>
+
     <section class="contact" id="contacto">
+        <h2 class="contact__title">Contacto</h2>
         <article class="contact__content container">
-            <h2 class="newflavors__title">Contacto</h2>
             <form action="/" method="post" class="contact__form" id="contactForm">
                 <input type="text" name="nombre" class="contact__input contact__input--text" placeholder="Nombre"
                     id="nombre">
@@ -140,9 +144,37 @@
                 <textarea name="mensaje" class="contact__textarea" placeholder="Mensaje" id="mensaje"></textarea>
                 <button type="submit" class="contact__button">Enviar</button>
             </form>
+            <div class="contact__map"></div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345079235!2d144.9537353153183!3d-37.81627977975185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43c70c9b3b%3A0x77c80f7e0a1bb567!2sFederation%20Square!5e0!3m2!1ses!2sau!4v1599383123000!5m2!1ses!2sau"
+                allowfullscreen loading="lazy">
+            </iframe>
         </article>
+
+
+
     </section>
 
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__section footer__section--logo">
+                <img src="./images/teresa.svg" alt="Logo Teresa helados" class="footer__logo">
+            </div>
+            <div class="footer__section footer__section--social">
+                <h2 class="footer__title">Síguenos</h2>
+                <div class="footer__social-icons">
+                    <a href="https://facebook.com" class="footer__social-link" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com" class="footer__social-link" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="./js/validation.js"></script>
 
 </body>

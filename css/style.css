@@ -3,11 +3,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+* {
     font-family: "League Spartan", sans-serif;
 }
 
 body {
     color: #262322;
+    font-family: "League Spartan", sans-serif;
 }
 
 h1,
@@ -46,7 +50,6 @@ img {
 .page-header {
     background-color: #3335b4;
     padding: 16px;
-    /*display: flex;*/
 }
 
 .navbar__menu {
@@ -135,7 +138,8 @@ picture img {
     font-size: 20px;
 }
 
-.hero__link, .contact__button  {
+.hero__link,
+.contact__button {
     display: inline-block;
     font-size: 20px;
     background-color: #3335b4;
@@ -152,27 +156,26 @@ picture img {
     text-align: center;
 }
 
-.hero__link:hover, .contact__button:hover {
+.hero__link:hover,
+.contact__button:hover {
     background-color: #1f228c;
 }
 
-.we, .contact {
+.we,
+.contact {
     background-color: #EEE5E9;
 }
 
-.we__content {
+.we__content,
+.contact__content {
     display: flex;
     flex-direction: row;
     padding: 100px 0;
     gap: 30px;
-
+    justify-content: center;
 }
 
-.we__image {
-    flex: 1;
-    padding: 20px;
-}
-
+.we__image,
 .we__text {
     flex: 1;
     padding: 20px;
@@ -181,19 +184,24 @@ picture img {
 .we__title,
 .newflavors__title,
 .flavors__title,
-.curiosities__title {
+.curiosities__title,
+.contact__title {
     font-size: 36px;
 }
 
-.we__description, .newflavors__description, .curiosities__description {
+.we__description,
+.newflavors__description,
+.curiosities__description {
     line-height: 25px;
     margin: 30px 0;
     font-size: 24px;
 }
 
-.newflavors__description, .curiosities__description {
+.newflavors__description,
+.curiosities__description {
     text-align: center;
 }
+
 .newflavors {
     padding: 100px 0;
 
@@ -260,19 +268,19 @@ picture img {
 }
 
 .contact__form {
-    padding: 40px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     max-width: 600px;
-    margin: 0 auto;
 }
 
-.contact__input, .contact__textarea {
+.contact__input,
+.contact__textarea {
     width: 100%;
     padding: 20px;
     border: transparent;
     border-radius: 12px;
+    font-size: large;
 }
 
 .contact__textarea {
@@ -282,27 +290,24 @@ picture img {
 }
 
 .curiosities {
-    padding: 20px 0;
+    padding: 100px 0;
     background-color: #f4f4f4;
 }
 
-.contact__content {
-    padding: 100px;
-}
 .curiosities__title {
     margin-bottom: 20px;
 }
 
 .curiosities__video-wrapper {
     display: flex;
-    justify-content: center; /* Centrar el video horizontalmente */
-    align-items: center; /* Centrar el video verticalmente si el contenedor tiene altura */
+    justify-content: center;
+    align-items: center;
     position: relative;
-    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
     max-width: 100%;
-    background: #000;
+    background: #1f228c;
 }
 
 .curiosities__video-wrapper iframe {
@@ -313,6 +318,59 @@ picture img {
     height: 100%;
     border: 0;
 }
+
+.contact_map {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer {
+    background-color: #3335b4;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer__section {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+    text-align: center;
+}
+
+.footer__logo {
+    max-width: 150px;
+}
+
+.footer__title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer__social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer__social-link {
+    color: #fff;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.footer__social-link:hover {
+    color: #ddd;
+}
+
 @media (max-width: 768px) {
 
     .navbar,
@@ -331,6 +389,20 @@ picture img {
         flex-direction: column;
         align-content: space-around;
     }
+
+    .contact__form {
+        max-width: 400px;
+    }
+
+    .contact__content {
+        padding: 20px;
+        align-items: center;
+    }
+
+    .contact__content {
+        flex-direction: column;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -339,6 +411,9 @@ picture img {
         height: 250px;
     }
 
+    .contact__form {
+        padding: 40px 0;
+    }
 }
 
 @media (max-width: 320px) {
@@ -346,4 +421,3 @@ picture img {
         display: none;
     }
 }
-
