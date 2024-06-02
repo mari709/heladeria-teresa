@@ -97,7 +97,7 @@ picture img {
 
 /*section hero*/
 .hero {
-    background-image: url(../images/banner-helado.jpg);
+    background-image: url(../images/banner-helado-min.jpg);
     padding: 160px;
     background-position: center;
     background-size: cover;
