@@ -138,10 +138,10 @@
         <article class="contact__content container">
             <form action="/" method="post" class="contact__form" id="contactForm">
                 <input type="text" name="nombre" class="contact__input contact__input--text" placeholder="Nombre"
-                    id="nombre">
+                    id="nombre" required>
                 <input type="email" name="email" class="contact__input contact__input--email" placeholder="Email"
-                    id="email">
-                <textarea name="mensaje" class="contact__textarea" placeholder="Mensaje" id="mensaje"></textarea>
+                    id="email" required>
+                <textarea name="mensaje" class="contact__textarea" placeholder="Mensaje" id="mensaje" required></textarea>
                 <button type="submit" class="contact__button">Enviar</button>
             </form>
             <div class="contact__map"></div>
