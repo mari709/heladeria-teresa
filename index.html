@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Mate:ital@0;1&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
 
@@ -138,14 +138,18 @@
         <article class="contact__content container">
             <form action="/" method="post" class="contact__form" id="contactForm">
                 <input type="text" name="nombre" class="contact__input contact__input--text" placeholder="Nombre"
-                    id="nombre">
+                    id="nombre" required>
                 <input type="email" name="email" class="contact__input contact__input--email" placeholder="Email"
-                    id="email">
-                <textarea name="mensaje" class="contact__textarea" placeholder="Mensaje" id="mensaje"></textarea>
+                    id="email" required>
+                <textarea name="mensaje" class="contact__textarea" placeholder="Mensaje" id="mensaje"
+                    required></textarea>
                 <button type="submit" class="contact__button">Enviar</button>
             </form>
             <div class="contact__map"></div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.051853340839!2d-57.54782228882396!3d-37.999250971812465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dc1b2c43a1ab%3A0x75e691cacfb8f440!2sAv.%20Pedro%20Luro%202500%2C%20B7600GTQ%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1717353042377!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.051853340839!2d-57.54782228882396!3d-37.999250971812465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dc1b2c43a1ab%3A0x75e691cacfb8f440!2sAv.%20Pedro%20Luro%202500%2C%20B7600GTQ%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1717353042377!5m2!1ses!2sar"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </article>
 
 
